@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            color: white;
+        }
+
+        header {
+            position: sticky;
+            top: 0px;
+            background-color: #ad5afacf;
+        }
+
+        nav {
+            padding-top: 23px;
+            height: 58px;
+
+
+        }
+
+        ul {
+            width: 32%;
+            margin: auto;
+        }
+
+        ul li {
+            display: inline;
+            padding: 15px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: white;
+
+        }
+        main{
+            background-color: black;
+            padding: 2px;
+        }
+
+        .container {
+            background-color: green;
+            margin: 10px;
+            font-size: 50px;
+            border: 2px solid black;
+            height: 500px;
+        }
+
+        .box {
+            width: 48%;
+            border: 2px solid black;
+            height: 95%;
+
+        }
+
+        .box:first-child {
+            float: left;
+            background-color: peru;
+            margin: 12px;
+
+        }
+
+        .box:nth-child(2) {
+            float: right;
+            background-color: aqua;
+            margin: 12px;
+        }
+
+        .othercontent {
+            height: 200px;
+            border: 2px solid rgb(241, 236, 236);
+            width: 200px;
+            clear: both;
+            width: 80vw;
+            margin: auto;
+            border-radius: 30px;
+            text-align: center;
+            margin: 10px auto;
+
+        }
+
+
+        .othercontent p {
+            margin: 89px auto;
+        }
+        
+        .icon {
+            width: 70px;
+            height: 70px;
+            background-color: rgb(255, 81, 0);
+            position: fixed;
+            bottom: 70px;
+            border-radius: 50%;
+            right: 10px;
+        }
+
+        footer {
+            border: 2px solid red;
+            height: 100px;
+            clear: both;
+            width: 98vw;
+            margin: auto;
+            border-radius: 30px;
+            text-align: center;
+            margin: 10px auto;
+            background-color: blue;
+        }
+        p{
+            font-size: 50px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+
+            <div class="box">This is some content</div>
+            <div class="box">This is some content</div>
+        </div>
+        
+        <div class="othercontent">
+            <p>
+                Welcome to the sigma web development course
+            </p>
+            
+        </div>
+        <div class="icon"></div>
+    </main>
+
+    <footer>
+        <p>
+        This is footer
+        </p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Variables</title>
+    <style>
+
+        :root{
+            --color: rgb(255, 0, 247);
+            --seccolor: rgb(231, 164, 246); 
+            --defpad: 23px;
+            --defop: 0.4;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+       .nav{
+            background-color: var(--color);
+        }
+
+        ul{
+            display: flex;
+        }
+
+        ul li{
+            opacity: var(--defop);
+            list-style: none;
+            padding: var(--defpad);
+            border: 2px solid var(--seccolor);
+        }
+
+        ul li:first-child{
+            --color: rgb(243, 87, 8);
+            background-color: var(--color, blue);
+        }
+
+        .container{
+            background-color: var(--seccolor);
+            text-transform:  ;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About </li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    
+
+    <div class="container">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse assumenda qui ad dolorem coand nsequuntur facilis aliquam. Unde sapiente ipsam quaerat, at debitis nesciunt, totam nulla quae ad ipsum veniam sed eligendi rem deserunt quos maiores modi. Illo eaque expedita natus iusto nostrum dolorem quos est.
+        what are you doing and when will you come to school hello everyone how are you and what are you doing ok done now tell me what are you doing and when will you do your homework what are your goals in the life and when will you fullfil that goals tell me
+    </div>
+</body>
+</html>

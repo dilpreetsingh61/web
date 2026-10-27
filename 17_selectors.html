@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selector  */
+        div {
+            background-color: red;
+        }
+
+        /* Class Selector  */
+        .red {
+            background-color: red;
+        }
+
+        /* Id Selector */
+        #green {
+            background-color: green;
+        }
+
+        /* Child Selectors  */
+        div>p {
+            /*if p is the direct child of div*/
+            color: blue;
+            background-color: brown;
+        }
+
+        /* Descendant Selector  */
+        div p {
+            /*If p is present anywhere in div*/
+            color: blue;
+            background-color: brown;
+        }
+
+        /* Universal Selector */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo Selector  */
+        a:visited {
+            color: yellow
+                /*it will change the color if we have visited the link */
+        }
+
+        a:link {
+            color: green;
+            /*if the link is not visited then its color will be green*/
+        }
+
+        a:active {
+            background-color: red;
+            /*it will change the color when the link is clicked*/
+        }
+
+        a:hover {
+            background-color: yellow;
+            /*it will change the color when the link is hoverd*/
+        }
+
+
+        p:first-child {
+            background-color: aqua;
+            /*it will change the color of p tag where it is the first child of its parent*/
+        }
+
+        p:nth-child(2) {
+            background-color: rgb(182, 207, 207);
+            /*it will change the color of p tag where it is the first child of its parent*/
+
+        }
+
+        /* This is an example of attribute selector. */
+        [data-x=a] {
+            color: maroon;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="one">
+        <p>I am first</p>
+        <p>I am second</p>
+    </main>
+    <div class="red">
+        I am a div
+        <article>
+
+            <p>I am a para inside div</p>
+        </article>
+    </div>
+
+    <div id="green">
+        I am another div
+    </div>
+    <a href="https://www.google.com">Go to Google</a>
+    <a href="https://www.facebook.com">Go to Facebook</a>
+</body>
+
+</html>
